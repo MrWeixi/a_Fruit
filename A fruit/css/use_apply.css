@@ -1,0 +1,170 @@
+.art {
+    width: 100%;
+    height: 170px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.art>h2 {
+    margin-top: 50px;
+    font-size: 36px;
+}
+
+.art_msg {
+    width: 504px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.art_msg>a {
+    display: inline-block;
+    width: 164px;
+    height: 47px;
+    font-size: 16px;
+    font-family: '微软雅黑';
+    text-align: center;
+
+}
+
+a {
+    color: rgb(172, 170, 184);
+}
+
+/* 颜色*/
+.a {
+    border-bottom: 3px solid rgb(246, 84, 64);
+}
+
+.a2 {
+    color: rgb(246, 84, 64);
+}
+
+.usenav {
+    width: 100%;
+    height: 55px;
+    margin: -30px auto 0;
+    box-shadow: 0px -1px 5px 1px rgba(0, 0, 0, .3);
+}
+
+.usenav .usenav-list {
+    width: 1000px;
+    height: 55px;
+    margin: 0 auto;
+    padding-left: 230px;
+    overflow: hidden;
+}
+
+.usenav .usenav-list li {
+    float: left;
+    line-height: 55px;
+    font-size: 16px;
+    font-family: '微软雅黑';
+    margin-left: 120px;
+}
+
+.usenav .usenav-list li .all {
+    color: #000;
+}
+
+
+
+
+.slide {
+    width: 100%;
+    overflow: hidden;
+    background-color: #f7f7f7;
+}
+
+.slide .hot-slide {
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 25px;
+}
+
+.slide .hot-slide .hot-list {
+    width: 222px;
+    height: 286px;
+    margin-right: 13px;
+    margin-left: 13px;
+    margin-top: 30px;
+    float: left;
+    background-color: #fff;
+    border: 1px solid #e8e8e8;
+    border-radius: 8px;
+}
+
+.slide .hot-slide .hot-list li:nth-child(1) {
+    position: relative;
+}
+
+.slide .hot-slide .hot-list li:nth-child(1) .icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 8px;
+    background-color: #ff543f;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.slide .hot-slide .hot-list img {
+    width: 222px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.slide .hot-slide .hot-list h3 {
+    width: 200px;
+    font-weight: bold;
+    margin: 10px auto 0;
+}
+
+.slide .hot-slide .hot-list li:nth-child(3) {
+    margin-top: 20px;
+    margin-left: 35px;
+}
+
+.slide .hot-slide .hot-list li:nth-child(3) span {
+    padding: 7px 10px;
+    border: 1px solid #f8573d;
+    border-radius: 8px;
+    color: #f8573d;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.slide .hot-slide .hot-list li:nth-child(4) p {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.slide .hot-slide .hot-list li:nth-child(4) p span {
+    color: #f8573d;
+
+}
+
+.slide .hot-slide .hot-list li:nth-child(5) p {
+    text-align: center;
+    color: #f8573d;
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.slide .more {
+    width: 1000px;
+    height: 126px;
+    margin: 0 auto;
+    line-height: 126px;
+}
+
+.slide .more p {
+    text-align: center;
+    color: #9e9e9e;
+    font-size: 18px;
+}

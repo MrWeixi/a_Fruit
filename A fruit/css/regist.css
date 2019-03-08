@@ -1,0 +1,103 @@
+ .rep {
+     width: 100%;
+     background-color: rgb(247, 247, 247);
+     margin-top: 4px;
+     box-sizing: border-box;
+     padding-top: 24px;
+ }
+
+ .rep .rep_container {
+     width: 1000px;
+     margin: 0 auto;
+     border-radius: 8px;
+     background: #fff;
+     padding-top: 16px;
+ }
+
+ .rep .rep_container h2 {
+     height: 28px;
+     line-height: 28px;
+     border-left: 6px rgb(246, 84, 64) solid;
+     padding-left: 12px;
+ }
+
+ .rep .rep_container>.container {
+     width: 412px;
+     margin: 0 auto;
+     padding-top: 30px;
+ }
+
+ .rep .rep_container>.container p {
+     height: 50px;
+     margin-bottom: 26px;
+     width: 100%;
+     overflow: hidden;
+ }
+
+ input {
+     width: 400px;
+     height: 48px;
+     border-radius: 10px;
+     background-color: rgb(247, 247, 247);
+     /* outline-style: none; */
+     font-size: 16px;
+     padding-left: 12px;
+     border: 1px #eee solid;
+     float: left;
+
+ }
+
+ input:hover {
+     border: 1px rgb(110, 167, 221) solid;
+ }
+
+ .ipt {
+     width: 250px;
+     float: left;
+ }
+
+ .rep .rep_container>.container p img {
+     padding-left: 12px;
+     float: right;
+     margin-top: 16px;
+ }
+
+ #ipt {
+     width: 124px;
+     height: 48px;
+     line-height: 48px;
+     text-align: center;
+     border: 1px #3c3c3c solid;
+     border-radius: 10px;
+     float: right;
+     color: #333;
+     font-size: 16px;
+     cursor: pointer;
+
+ }
+
+ #submit {
+     width: 400px;
+     height: 50px;
+     border-radius: 10px;
+     font-size: 16px;
+     padding-left: 12px;
+     border: 1px #eee solid;
+     float: left;
+     background: rgb(235, 84, 64);
+     color: #fff;
+     cursor: pointer;
+
+ }
+
+ #submit:hover {
+     opacity: .8;
+ }
+
+ .for {
+     height: 80px;
+ }
+
+ .pd {
+     height: 40px;
+ }

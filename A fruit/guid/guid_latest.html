@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>导购最新</title>
+    <link rel="stylesheet" href="./../css/reset.css">
+    <link rel="stylesheet" href="./../css/public.css">
+    <link rel="stylesheet" href="./../css/guid_latest.css">
+</head>
+
+<body>
+    <!-- 网站导航 -->
+    <div class="show">
+        <header>
+            <ul class="navbar">
+                <li><a><img src="./../img/logonew.png" alt="logo" class="navLogo"></a></li>
+                <li><a href="./../index.html">首页</a></li>
+                <li><a href="./../play/latest.html">酷玩</a></li>
+                <li><a class="red">导购</a></li>
+                <li><a href="./../use/use_index.html">试用</a></li>
+                <li><a href="./../report/newest.html">报告</a></li>
+            </ul>
+            <ul class="navbar-right">
+                <li><a><img src="./../css/img/search.png" alt="搜索"></a></li>
+                <li><a href="./../regist.html">注册</a></li>
+            </ul>
+        </header>
+    </div>
+
+    <!-- 主题部分 -->
+
+    <article class="art">
+        <h2>导购清单</h2>
+        <div class="art_msg">
+            <a class="a a2">最新</a>
+            <a href="guid_hot.html">最热</a>
+        </div>
+    </article>
+
+        
+    <div class="second">
+        <div class="select">
+            <div class="sel-list">
+                <!-- <ul class="select-list">
+                            <li><img src="./img/g1.jpg" alt=""></li>
+                            <li>
+                                <p>空气净化器里面学问多得惊呆你，你选对了吗？</p>
+                            </li>
+                            <li>
+                                <p><span>3</span><span>3</span></p>
+                            </li>
+                            <img src="./../css/img/listbg.jpg" alt="" class="list-bg">
+                        </ul> -->
+            </div>
+            <script id="second" type="text/x-dot-template">
+                {{~it:value:index}}
+                    <ul class="select-list">
+                        <li><a href="./guid.html"><img src="{{=value.img}}" alt=""></a></li>
+                        <li>
+                            <p>{{=value.introduce}}</p>
+                        </li>
+                        <li>
+                            <p><span>3</span><span>3</span></p>
+                        </li>
+                        <img src="./../css/img/listbg.jpg" alt="" class="list-bg">
+                    </ul>
+                {{~}}
+            </script>
+        </div>
+        <div class="more">
+            <p><a href="">点击加载更多</a></p>
+        </div>
+    </div>
+
+
+
+    
+    <footer>
+        <div class="footer">
+            <div class="foot-logo">
+                <img src="./../img/code.png" alt="二维码">
+            </div>
+            <dl id=myd1>
+                <dt>
+                    <img src="./../img/logoImg.jpg" alt="">
+                </dt>
+                <dd>全球酷玩试用导购平台酷·新奇·好玩·品质</dd>
+                <dd>微信添加"JguoJguo"获取我们的服务。</dd>
+            </dl>
+            <dl>
+                <dt>免费试用</dt>
+                <dd><a href="">试用流程</a></dd>
+                <dd><a href="">如何提高成功率</a></dd>
+            </dl>
+            <dl>
+                <dt>友情链接</dt>
+                <dd>
+                    <ul>
+                        <li><a href="">智东西</a></li>
+                        <li><a href="">搜狐IT</a></li>
+                        <li><a href="">搜狐数码</a></li>
+                        <li><a href="">凤凰数码</a></li>
+                        <li><a href="">泡泡网</a></li>
+                        <li><a href="">ZUK社区</a></li>
+                        <li><a href="">极客公园</a></li>
+                        <li><a href="">果库</a></li>
+                    </ul>
+                </dd>
+                <dd>
+                    <ul>
+                        <li><a href="">WEIBUSI</a></li>
+                        <li><a href="">腾讯科技</a></li>
+                        <li><a href="">凤凰科技</a></li>
+                        <li><a href="">PConline</a></li>
+                        <li><a href="">3W咖啡</a></li>
+                        <li><a href="">亿觅emie</a></li>
+                        <li><a href="">易迅易启玩</a></li>
+                    </ul>
+                </dd>
+            </dl>
+            <dl>
+                <dt>购买攻略</dt>
+                <dd>美亚海淘教程</dd>
+                <dd>日亚海淘教程</dd>
+                <dd>海淘转运攻略</dd>
+                <dd>kickstarter 众筹购买攻略</dd>
+                <dd>indiegogo 众筹购买攻略</dd>
+            </dl>
+            <dl>
+                <dt>厂商合作</dt>
+                <dd><a href="">关于极果</a></dd>
+                <dd><a href="">联系我们</a></dd>
+                <dd><a href="">商务合作：BD@jiguo.com</a></dd>
+                <dd><a href="">CEO邮箱：CEO@jiguo.com</a></dd>
+            </dl>
+        </div>
+        <p>@copy 2016 极果版权所有</p>
+    </footer>
+    <script src="./../js/jquery-3.3.1.min.js"></script>
+    <script src="./../js/doT.min.js"></script>
+    <script src="./../js/guid_latest.js"></script>
+</body>
+
+</html>

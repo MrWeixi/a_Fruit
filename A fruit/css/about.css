@@ -1,0 +1,96 @@
+.main{
+    width: 100%;
+}
+.main .help{
+    width: 1000px;
+    margin: 50px auto;
+    overflow: hidden;
+}
+.main .help .main-left{
+    width: 270px;
+    height: 329px;
+    background-color: #f3f3f3;
+    border-radius: 4px;
+    float: left;
+}
+.main .help .main-left h2{
+    width: 210px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 auto;
+    font-weight: bold;
+    padding-top: 10px;
+    margin-left: 20px;
+    padding-left: 20px;
+    border-bottom: 1px solid #a3a3a3;
+}
+.main .help .main-left dl{
+    margin-left: 38px;
+    margin-top: 20px;
+}
+.main .help .main-left dl dt>a{
+    color: #4a5250;
+    font-size: 20px;
+    font-weight: bold;
+}
+.main .help .main-left dl dd,
+.main .help .main-left dl dd>a{
+    color: #4a5250;
+    font-size: 16px;
+    margin-left: 15px;
+    margin-top: 8px;
+}
+.main .help .main-right{
+     width: 700px;
+     background-color: #f3f3f3;
+     border-radius: 4px;
+     float: left;
+     margin-left: 30px;
+}
+.main .help .main-right h2 {
+    width: 630px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 auto;
+    font-weight: bold;
+    padding-top: 10px;
+    margin-left: 30px;
+    border-bottom: 1px solid #a3a3a3;
+}
+
+.main .help .main-right p{
+    height: 70px;
+    line-height: 70px;
+    margin-left: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #4a5250;
+}
+.main .help .main-right div{
+    width: 630px;
+    margin: 0 auto;
+    font-size: 16px;
+    color: #365763;
+    line-height: 25px;
+}
+.main .help .main-right dl{
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+.main .help .main-right dl dt{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: '微软雅黑';
+    margin: 20px 0;
+    color: #000;
+}
+
+.main .help .main-right dl dd{
+    color: #655d55;
+    margin-left: 25px;
+    font-size: 16px;
+    line-height: 25px;
+}
+.main .help .main-right dl dd>a{
+    color: #655d55;
+}

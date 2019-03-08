@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>免费试用</title>
+    <link rel="stylesheet" href="./../css/reset.css">
+    <link rel="stylesheet" href="./../css/public.css">
+    <link rel="stylesheet" href="./../css/use_end.css">
+</head>
+<body>
+<!-- 网站导航 -->
+<div class="show">
+    <header>
+        <ul class="navbar">
+            <li><a><img src="./../img/logonew.png" alt="logo" class="navLogo"></a></li>
+            <li><a href="./../index.html">首页</a></li>
+            <li><a href="./../play/latest.html">酷玩</a></li>
+            <li><a href="./../guid/guid_latest.html">导购</a></li>
+            <li><a class="red">试用</a></li>
+            <li><a href="./../report/newest.html">报告</a></li>
+        </ul>
+        <ul class="navbar-right">
+            <li><a><img src="./../css/img/search.png" alt="搜索"></a></li>
+            <li><a href="./../regist.html">注册</a></li>
+        </ul>
+    </header>
+</div>
+<article class="art">
+    <h2>免费试用</h2>
+    <div class="art_msg">
+        <a class="a a2">大众试用</a>
+        <a href="use_exclusive.html">体验师专享</a>
+    </div>
+
+</article>
+<div class="usenav">
+    <ul class="usenav-list">
+        <li><a href="use_index.html">全部</a></li>
+        <li><a href="use_apply.html">申请中</a></li>
+        <li><a href="use_try.html">试用中</a></li>
+        <li><a href="use_end.html" class="all">已结束</a></li>
+    </ul>
+</div>
+
+
+<div class="slide">
+    <ul class="hot-slide">
+        <!-- <li class="hot-list">
+            <a href="">
+                <img src="./../img/hot9.jpg" alt="">
+            </a>
+            <span class="icon">首发</span>
+            <h3>巴慕达 The Toaster 烤面包机</h3>
+            <p>
+                <span>2032</span>
+                <span>20台</span>
+            </p>
+            <p><span>1392</span>申请</p>
+            <p>剩余时间两天</p>
+        </li> -->
+        <script id="use_end" type="text/x-dot-template">
+            {{~it:value:index}}
+                <li class="hot-list">
+                    <a href="./particulars.html">
+                        <img src="{{=value.img}}" alt="">
+                    </a>
+                    <span class="icon">{{=value.icon}}</span>
+                    <h3>{{=value.title}}</h3>
+                    <p>
+                        <span>{{=value.arr[0]}}</span>
+                        <span>{{=value.arr[1]}}</span>
+                    </p>
+                    <p><span>{{=value.apply}}</span>申请</p>
+                    <p>{{=value.residue}}</p>
+                </li>
+                {{~}}
+            </script>
+    </ul>
+    <div class="more">
+        <p><a href="">点击加载更多</a></p>
+    </div>
+</div>
+
+
+
+
+
+<footer>
+    <div class="footer">
+        <div class="foot-logo">
+            <img src="./../img/code.png" alt="二维码">
+        </div>
+        <dl id=myd1>
+            <dt>
+                <img src="./../img/logoImg.jpg" alt="">
+            </dt>
+            <dd>全球酷玩试用导购平台酷·新奇·好玩·品质</dd>
+            <dd>微信添加"JguoJguo"获取我们的服务。</dd>
+        </dl>
+        <dl>
+            <dt>免费试用</dt>
+            <dd><a href="">试用流程</a></dd>
+            <dd><a href="">如何提高成功率</a></dd>
+        </dl>
+        <dl>
+            <dt>友情链接</dt>
+            <dd>
+                <ul>
+                    <li><a href="">智东西</a></li>
+                    <li><a href="">搜狐IT</a></li>
+                    <li><a href="">搜狐数码</a></li>
+                    <li><a href="">凤凰数码</a></li>
+                    <li><a href="">泡泡网</a></li>
+                    <li><a href="">ZUK社区</a></li>
+                    <li><a href="">极客公园</a></li>
+                    <li><a href="">果库</a></li>
+                </ul>
+            </dd>
+            <dd>
+                <ul>
+                    <li><a href="">WEIBUSI</a></li>
+                    <li><a href="">腾讯科技</a></li>
+                    <li><a href="">凤凰科技</a></li>
+                    <li><a href="">PConline</a></li>
+                    <li><a href="">3W咖啡</a></li>
+                    <li><a href="">亿觅emie</a></li>
+                    <li><a href="">易迅易启玩</a></li>
+                </ul>
+            </dd>
+        </dl>
+        <dl>
+            <dt>购买攻略</dt>
+            <dd>美亚海淘教程</dd>
+            <dd>日亚海淘教程</dd>
+            <dd>海淘转运攻略</dd>
+            <dd>kickstarter 众筹购买攻略</dd>
+            <dd>indiegogo 众筹购买攻略</dd>
+        </dl>
+        <dl>
+            <dt>厂商合作</dt>
+            <dd><a href="">关于极果</a></dd>
+            <dd><a href="">联系我们</a></dd>
+            <dd><a href="">商务合作：BD@jiguo.com</a></dd>
+            <dd><a href="">CEO邮箱：CEO@jiguo.com</a></dd>
+        </dl>
+    </div>
+    <p>@copy 2016 极果版权所有</p>
+</footer>
+<script src="./../js/jquery-3.3.1.min.js"></script>
+<script src="./../js/doT.min.js"></script>
+<script src="./../js/use_end.js"></script>
+</body>
+</html>

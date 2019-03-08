@@ -1,0 +1,79 @@
+.boxs {
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+
+.boxs a {
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.boxs>.left {
+    width: 270px;
+    background: rgb(235, 235, 235);
+    float: left;
+    border-radius: 10px;
+}
+
+.boxs>.right {
+    width: 703px;
+    float: right;
+    background: rgb(235, 235, 235);
+    border-radius: 10px;
+}
+
+.boxs>.left>h2 {
+    height: 60px;
+    line-height: 80px;
+    width: 250px;
+    border-bottom: 1px solid rgb(163, 163, 163);
+    margin-left: 10px;
+    font-weight: bolder;
+}
+
+.boxs>.right h2 {
+    height: 60px;
+    line-height: 80px;
+    width: 100%;
+    border-bottom: 1px solid rgb(163, 163, 163);
+    font-weight: bolder;
+}
+.boxs>.left dl dt a{
+    font-weight: 600;
+    font-size: 16px;
+    color: #000;
+}
+.boxs>.left dt{
+
+    margin: 12px 0 0 18px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.boxs>.right>.right-msg {
+    width: 670px;
+    margin: 0 auto;
+}
+
+.boxs>.right>.right-msg p {
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 12px;
+}
+
+.boxs>.left dd {
+    margin: 10px 0 0 24px;
+}
+
+.boxs>.left .dtt {
+    height: 40px;
+}
+
+.pppp {
+    height: 40px;
+}

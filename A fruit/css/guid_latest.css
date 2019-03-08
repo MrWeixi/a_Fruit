@@ -1,0 +1,134 @@
+.art {
+    width: 100%;
+    height: 170px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.art>h2 {
+    margin-top: 50px;
+    font-size: 36px;
+}
+
+.art_msg {
+    width: 504px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.art_msg>a {
+    display: inline-block;
+    width: 164px;
+    height: 47px;
+    text-align: center;
+}
+
+a {
+    color: rgb(172, 170, 184);
+}
+
+/* 颜色*/
+.a {
+    border-bottom: 3px solid rgb(246, 84, 64);
+}
+
+.a2 {
+    color: rgb(246, 84, 64);
+}
+
+
+
+.second {
+    width: 100%;
+    /* height: 1178px; */
+    margin: 0 auto;
+    /* margin-top: -30px; */
+    background-color: #f5f5f5;
+}
+
+.second .select {
+    width: 1000px;
+    margin: 0 auto;
+    /* padding-top: 25px; */
+    overflow: hidden;
+}
+
+.second .select .sel-list {
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.second .select .select-list {
+    width: 220px;
+    height: 228px;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    margin-top: 20px;
+    float: left;
+    margin-right: 28px;
+    background-color: #fff;
+}
+
+.second .select .select-list .list-bg {
+    margin-top: 17px;
+}
+
+.second .select .select-list img {
+    width: 220px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+.second .select .select-list img:hover{
+    animation: Hover 1.2s ease infinite;
+}
+.second .select .select-list li:nth-child(2) p {
+    width: 195px;
+    margin-left: 8px;
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+.second .select .select-list li:nth-child(3) p {
+    margin-top: 20px;
+    margin-left: 8px;
+    font-size: 16px;
+    color: #9f9e97;
+}
+
+.second .select .select-list li:nth-child(3) p span {
+    float: right;
+    padding: 0 15px;
+}
+
+.second .select .select-list li:nth-child(3) p span:nth-child(1) {
+    background: url('./img/reply.png') no-repeat 1px 1px;
+}
+
+.second .select .select-list li:nth-child(3) p span:nth-child(2) {
+    background: url('./img/xin.png') no-repeat 1px 1px;
+}
+
+.second .more {
+    width: 1000px;
+    height: 126px;
+    margin: 0 auto;
+    line-height: 126px;
+}
+
+.second .more p {
+    text-align: center;
+
+}
+
+.second .more a {
+    color: #e65432;
+    font-size: 18px;
+    padding-left: 20px;
+    background: url('./img/more.png') no-repeat 1px center;
+}
+
+

@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>极果首页</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <style>
+        #into {
+            width: 3000px;
+            position: relative;
+        }
+        #top{
+            position: fixed;
+            right: 6%;
+            top: 80%;
+            width: 60px;
+            height: 60px;
+            border-radius:10px; 
+            background-color:rgb(182, 161, 161);
+            z-index:20;
+            text-align: center;
+            line-height: 60px;
+            display: none;
+        }
+        #top:hover{
+            animation: Hover 1.2s ease infinite;
+            background-color:#837d7d; 
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="out">
+<a href="#" id="top"><img src="./css/img/back.png" alt="@"></a>
+
+        <!-- 网站导航 -->
+        <div class="show">
+            <header>
+                <ul class="navbar">
+                    <li><a><img src="./img/logonew.png" alt="logo" class="navLogo"></a></li>
+                    <li><a href='#' class="red">首页</a></li>
+                    <li><a href="./play/latest.html">酷玩</a></li>
+                    <li><a href="./guid/guid_latest.html">导购</a></li>
+                    <li><a href="./use/use_index.html">试用</a></li>
+                    <li><a href="./report/newest.html">报告</a></li>
+                </ul>
+                <ul class="navbar-right">
+                    <li><a><img src="./css/img/search.png" alt="搜索"></a></li>
+                    <li><a href="./regist.html">注册</a></li>
+                </ul>
+            </header>
+        </div>
+
+        <!-- 页面内容 -->
+        <section>
+            <div class="focus-bg">
+                <div class="focus">
+                    <div class="focus-right">
+                        <h1>幻响小贝HiFi2.1音箱</h1>
+                        <p>
+                            <span>126人申请</span>
+                            <span>￥599</span>
+                            <span>20台</span>
+                        </p>
+                        <p class="time">申请时间剩余：13天5小时37分钟</p>
+                        <p>
+                            <a href="">立即申请</a>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <h1>热门试用</h1>
+                <span class="prev" id="prev"></span>
+                <span class="next" id="next"></span>
+                <div class="hot-slide">
+                    <ul id="into">
+                        <!-- <li class="hot-list">
+                            <p>
+                                <a href="">
+                                    <img src="./img/hot9.jpg" alt="">
+                                </a>
+                                <span class="icon">首发</span>
+                            </p>
+                            <h3>巴慕达 The Toaster 烤面包机</h3>
+                            <p class="list-p">
+                                <span>2032</span>
+                                <span>20台</span>
+                            </p>
+                            <p class="list-pa"><span>1392</span>申请</p>
+                            <p class="list-pb">剩余时间两天</p>
+                        </li>   -->
+                    </ul>
+                     <script id="list" type="text/x-dot-template">
+                        {{~it:value:index}}
+                        <li class="hot-list">
+                                <p>
+                                    <a href="./use/particulars.html">
+                                        <img src="{{=value.img}}" alt="">
+                                    </a>
+                                    <span class="icon">{{=value.icon}}</span>
+                                </p>                              
+                                    <h3>{{=value.title}}</h3>
+                                <p>
+                                    <span>{{=value.arr[0]}}</span>
+                                    <span>{{=value.arr[1]}}</span>
+                                </p>                             
+                                    <p><span>{{=value.apply}}</span>申请</p>    
+                                    <p>{{=value.residue}}</p>
+                            </li>
+                    
+                        {{~}}
+            </script>                   
+                </div>
+            </div>
+        </section>
+
+        <div class="first">
+            <div class="report">
+                <h1>报告精选</h1>
+                <span class="report-more">查看更多</span>
+                <div class="fir-list">
+                    <!-- <ul class="report-list">
+                    <li><img src="./img/bg1.jpg" alt=""></li>
+                    <li>
+                        <p>空气净化器里面学问多得惊呆你，你选对了吗？</p>
+                    </li>
+                    <li>
+                        <p>● 苏苏<span>3</span><span>3</span></p>
+                    </li>
+                </ul> -->
+                </div>
+
+                <script id="first" type="text/x-dot-template">
+                    {{~it:value:index}}
+                        <ul class="report-list">
+                            <li><a href="./guid/guid.html"><img src="{{=value.img}}" alt=""></a></li>
+                            <li>
+                                <p>{{=value.txt}}</p>
+                            </li>
+                            <li>
+                                <p>{{=value.nickname}}<span>3</span><span>3</span></p>
+                            </li>
+                        </ul>
+                    {{~}}
+                </script>
+                <!-- <ul class="report-list">
+                    <li><img src="./img/bg1.jpg" alt=""></li>
+                    <li>
+                        <p>空气净化器里面学问多得惊呆你，你选对了吗？</p>
+                    </li>
+                    <li>
+                        <p>● 苏苏<span>3</span><span>3</span></p>
+                    </li>
+                </ul>
+                <ul class="report-list">
+                    <li><img src="./img/bg1.jpg" alt=""></li>
+                    <li>
+                        <p>空气净化器里面学问多得惊呆你，你选对了吗？</p>
+                    </li>
+                    <li>
+                        <p>● 苏苏<span>3</span><span>3</span></p>
+                    </li>
+                </ul>
+                <ul class="report-list">
+                    <li><img src="./img/bg1.jpg" alt=""></li>
+                    <li>
+                        <p>空气净化器里面学问多得惊呆你，你选对了吗？</p>
+                    </li>
+                    <li>
+                        <p>● 苏苏<span>3</span><span>3</span></p>
+                    </li>
+                </ul>
+                <ul class="report-list">
+                    <li><img src="./img/bg1.jpg" alt=""></li>
+                    <li>
+                        <p>空气净化器里面学问多得惊呆你，你选对了吗？</p>
+                    </li>
+                    <li>
+                        <p>● 苏苏<span>3</span><span>3</span></p>
+                    </li>
+                </ul>
+                <ul class="report-list">
+                    <li><img src="./img/bg1.jpg" alt=""></li>
+                    <li>
+                        <p>空气净化器里面学问多得惊呆你，你选对了吗？</p>
+                    </li>
+                    <li>
+                        <p>● 苏苏<span>3</span><span>3</span></p>
+                    </li>
+                </ul>
+                <ul class="report-list">
+                    <li><img src="./img/bg1.jpg" alt=""></li>
+                    <li>
+                        <p>空气净化器里面学问多得惊呆你，你选对了吗？</p>
+                    </li>
+                    <li>
+                        <p>● 苏苏<span>3</span><span>3</span></p>
+                    </li>
+                </ul>
+                <ul class="report-list">
+                    <li><img src="./img/bg1.jpg" alt=""></li>
+                    <li>
+                        <p>空气净化器里面学问多得惊呆你，你选对了吗？</p>
+                    </li>
+                    <li>
+                        <p>● 苏苏<span>3</span><span>3</span></p>
+                    </li>
+                </ul> -->
+            </div>
+        </div>
+        <div class="second">
+            <div class="select">
+                <h1>导购精选</h1>
+                <span class="sel-more">查看更多</span>
+                <div class="sel-list">
+                    <!-- <ul class="select-list">
+                        <li><img src="./img/g1.jpg" alt=""></li>
+                        <li>
+                            <p>空气净化器里面学问多得惊呆你，你选对了吗？</p>
+                        </li>
+                        <li>
+                            <p><span>3</span><span>3</span></p>
+                        </li>
+                        <img src="./css/img/listbg.jpg" alt="" class="list-bg">
+                    </ul> -->
+                </div>
+
+                <script id="second" type="text/x-dot-template">
+                    {{~it:value:index}}
+                        <ul class="select-list">
+                            <li><a href="./guid/guid.html"><img src="{{=value.img}}" alt=""></a></li>
+                            <li>
+                                <p>{{=value.introduce}}</p>
+                            </li>
+                            <li>
+                                <p><span>3</span><span>3</span></p>
+                            </li>
+                            <img src="./css/img/listbg.jpg" alt="" class="list-bg">
+                        </ul>
+                    {{~}}
+                </script>
+
+
+                <!-- <ul class="select-list">
+                    <li><img src="./img/g1.jpg" alt=""></li>
+                    <li>
+                        <p>空气净化器里面学问多得惊呆你，你选对了吗？</p>
+                    </li>
+                    <li>
+                        <p><span>3</span><span>3</span></p>
+                    </li>
+                    <img src="./css/img/listbg.jpg" alt="" class="list-bg">
+                </ul>
+                <ul class="select-list">
+                    <li><img src="./img/g1.jpg" alt=""></li>
+                    <li>
+                        <p>空气净化器里面学问多得惊呆你，你选对了吗？</p>
+                    </li>
+                    <li>
+                        <p><span>3</span><span>3</span></p>
+                    </li>
+                    <img src="./css/img/listbg.jpg" alt="" class="list-bg">
+                </ul>
+                <ul class="select-list">
+                    <li><img src="./img/g1.jpg" alt=""></li>
+                    <li>
+                        <p>空气净化器里面学问多得惊呆你，你选对了吗？</p>
+                    </li>
+                    <li>
+                        <p><span>3</span><span>3</span></p>
+                    </li>
+                    <img src="./css/img/listbg.jpg" alt="" class="list-bg">
+                </ul> -->
+            </div>
+        </div>
+        <div class="third">
+            <div class="found">
+                <h1>发现酷玩</h1>
+                <span class="fou-more">查看更多</span>
+                <div class="fou-list">
+                    <ul class="found-list">
+                        <li><img src="./img/k1.jpg" alt=""></li>
+                        <li>
+                            <h3>SCIO微型光谱仪</h3>
+                            <p>空气净化器里面学问多得惊呆你，你选对了吗？</p>
+                        </li>
+                        <li>
+                            <p>￥1212<span>3</span><span>3</span></p>
+                        </li>
+                    </ul>
+                    <ul class="found-list">
+                        <li><img src="./img/k2.jpg" alt=""></li>
+                        <li>
+                            <h3>SCIO微型光谱仪</h3>
+                            <p>空气净化器里面学问多得惊呆你，你选对了吗？</p>
+                        </li>
+                        <li>
+                            <p>￥1212<span>3</span><span>3</span></p>
+                        </li>
+                    </ul>
+                    <ul class="found-list">
+                        <li><img src="./img/k3.jpg" alt=""></li>
+                        <li>
+                            <h3>SCIO微型光谱仪</h3>
+                            <p>空气净化器里面学问多得惊呆你，你选对了吗？</p>
+                        </li>
+                        <li>
+                            <p>￥1212<span>3</span><span>3</span></p>
+                        </li>
+                    </ul>
+                    <ul class="found-list">
+                        <li><img src="./img/k4.jpg" alt=""></li>
+                        <li>
+                            <h3>SCIO微型光谱仪</h3>
+                            <p>空气净化器里面学问多得惊呆你，你选对了吗？</p>
+                        </li>
+                        <li>
+                            <p>￥1212<span>3</span><span>3</span></p>
+                        </li>
+                    </ul>
+                </div>
+
+                
+                <!-- <ul class="found-list">
+                    <li><img src="./img/bg1.jpg" alt=""></li>
+                    <li>
+                        <h4>SCIO微型光谱仪</h4>
+                        <p>空气净化器里面学问多得惊呆你，你选对了吗？</p>
+                    </li>
+                    <li>
+                        <p>￥1212<span>3</span><span>3</span></p>
+                    </li>
+                </ul>
+                <ul class="found-list">
+                    <li><img src="./img/bg1.jpg" alt=""></li>
+                    <li>
+                        <h4>SCIO微型光谱仪</h4>
+                        <p>空气净化器里面学问多得惊呆你，你选对了吗？</p>
+                    </li>
+                    <li>
+                        <p>￥1212<span>3</span><span>3</span></p>
+                    </li>
+                </ul>
+                <ul class="found-list">
+                    <li><img src="./img/bg1.jpg" alt=""></li>
+                    <li>
+                        <h4>SCIO微型光谱仪</h4>
+                        <p>空气净化器里面学问多得惊呆你，你选对了吗？</p>
+                    </li>
+                    <li>
+                        <p>￥1212<span>3</span><span>3</span></p>
+                    </li>
+                </ul>
+                <ul class="found-list">
+                    <li><img src="./img/bg1.jpg" alt=""></li>
+                    <li>
+                        <h4>SCIO微型光谱仪</h4>
+                        <p>空气净化器里面学问多得惊呆你，你选对了吗？</p>
+                    </li>
+                    <li>
+                        <p>￥1212<span>3</span><span>3</span></p>
+                    </li>
+                </ul>
+                <ul class="found-list">
+                    <li><img src="./img/bg1.jpg" alt=""></li>
+                    <li>
+                        <h4>SCIO微型光谱仪</h4>
+                        <p>空气净化器里面学问多得惊呆你，你选对了吗？</p>
+                    </li>
+                    <li>
+                        <p>￥1212<span>3</span><span>3</span></p>
+                    </li>
+                </ul>
+                <ul class="found-list">
+                    <li><img src="./img/bg1.jpg" alt=""></li>
+                    <li>
+                        <h4>SCIO微型光谱仪</h4>
+                        <p>空气净化器里面学问多得惊呆你，你选对了吗？</p>
+                    </li>
+                    <li>
+                        <p>￥1212<span>3</span><span>3</span></p>
+                    </li>
+                </ul>
+                <ul class="found-list">
+                    <li><img src="./img/bg1.jpg" alt=""></li>
+                    <li>
+                        <h4>SCIO微型光谱仪</h4>
+                        <p>空气净化器里面学问多得惊呆你，你选对了吗？</p>
+                    </li>
+                    <li>
+                        <p>￥1212<span>3</span><span>3</span></p>
+                    </li>
+                </ul>
+                <ul class="found-list">
+                    <li><img src="./img/bg1.jpg" alt=""></li>
+                    <li>
+                        <h4>SCIO微型光谱仪</h4>
+                        <p>空气净化器里面学问多得惊呆你，你选对了吗？</p>
+                    </li>
+                    <li>
+                        <p>￥1212<span>3</span><span>3</span></p>
+                    </li>
+                </ul>
+                <ul class="found-list">
+                    <li><img src="./img/bg1.jpg" alt=""></li>
+                    <li>
+                        <h4>SCIO微型光谱仪</h4>
+                        <p>空气净化器里面学问多得惊呆你，你选对了吗？</p>
+                    </li>
+                    <li>
+                        <p>￥1212<span>3</span><span>3</span></p>
+                    </li>
+                </ul>
+                <ul class="found-list">
+                    <li><img src="./img/bg1.jpg" alt=""></li>
+                    <li>
+                        <h4>SCIO微型光谱仪</h4>
+                        <p>空气净化器里面学问多得惊呆你，你选对了吗？</p>
+                    </li>
+                    <li>
+                        <p>￥1212<span>3</span><span>3</span></p>
+                    </li>
+                </ul>
+                <ul class="found-list">
+                    <li><img src="./img/bg1.jpg" alt=""></li>
+                    <li>
+                        <h4>SCIO微型光谱仪</h4>
+                        <p>空气净化器里面学问多得惊呆你，你选对了吗？</p>
+                    </li>
+                    <li>
+                        <p>￥1212<span>3</span><span>3</span></p>
+                    </li>
+                </ul>
+                <ul class="found-list">
+                    <li><img src="./img/bg1.jpg" alt=""></li>
+                    <li>
+                        <h4>SCIO微型光谱仪</h4>
+                        <p>空气净化器里面学问多得惊呆你，你选对了吗？</p>
+                    </li>
+                    <li>
+                        <p>￥1212<span>3</span><span>3</span></p>
+                    </li>
+                </ul>
+                <ul class="found-list">
+                    <li><img src="./img/bg1.jpg" alt=""></li>
+                    <li>
+                        <h4>SCIO微型光谱仪</h4>
+                        <p>空气净化器里面学问多得惊呆你，你选对了吗？</p>
+                    </li>
+                    <li>
+                        <p>￥1212<span>3</span><span>3</span></p>
+                    </li>
+                </ul>
+                <ul class="found-list">
+                    <li><img src="./img/bg1.jpg" alt=""></li>
+                    <li>
+                        <h4>SCIO微型光谱仪</h4>
+                        <p>空气净化器里面学问多得惊呆你，你选对了吗？</p>
+                    </li>
+                    <li>
+                        <p>￥1212<span>3</span><span>3</span></p>
+                    </li>
+                </ul>
+                <ul class="found-list">
+                    <li><img src="./img/bg1.jpg" alt=""></li>
+                    <li>
+                        <h4>SCIO微型光谱仪</h4>
+                        <p>空气净化器里面学问多得惊呆你，你选对了吗？</p>
+                    </li>
+                    <li>
+                        <p>￥1212<span>3</span><span>3</span></p>
+                    </li>
+                </ul> -->
+            </div>
+             <script id="third" type="text/x-dot-template">
+                    {{~it:value:index}}
+                        <ul class="found-list">
+                            <li><a href="./use/particulars.html"><img src="{{=value.img}}" alt=""></a></li>
+                            <li>
+                                <h3>{{=value.title}}</h3>
+                                <p>{{=value.txt}}</p>
+                            </li>
+                            <li>
+                                <p>{{=value.money}}<span>3</span><span>3</span></p>
+                            </li>
+                        </ul>
+                    {{~}}
+                </script>
+            <div class="more">
+                <p><a>点击加载更多</a></p>
+            </div>
+        </div>
+        <!-- 网站底部 -->
+        <footer>
+            <div class="footer">
+                <div class="foot-logo">
+                    <img src="./img/code.png" alt="二维码">
+                </div>
+                <dl id=myd1>
+                    <dt>
+                        <img src="./img/logoImg.jpg" alt="">
+                    </dt>
+                    <dd>全球酷玩试用导购平台酷·新奇·好玩·品质</dd>
+                    <dd>微信添加"JguoJguo"获取我们的服务。</dd>
+                </dl>
+                <dl>
+                    <dt>免费试用</dt>
+                    <dd><a href="./help.html">试用流程</a></dd>
+                    <dd><a href="">如何提高成功率</a></dd>
+                </dl>
+                <dl>
+                    <dt>友情链接</dt>
+                    <dd>
+                        <ul>
+                            <li><a href="">智东西</a></li>
+                            <li><a href="">搜狐IT</a></li>
+                            <li><a href="">搜狐数码</a></li>
+                            <li><a href="">凤凰数码</a></li>
+                            <li><a href="">泡泡网</a></li>
+                            <li><a href="">ZUK社区</a></li>
+                            <li><a href="">极客公园</a></li>
+                            <li><a href="">果库</a></li>
+                        </ul>
+                    </dd>
+                    <dd>
+                        <ul>
+                            <li><a href="">WEIBUSI</a></li>
+                            <li><a href="">腾讯科技</a></li>
+                            <li><a href="">凤凰科技</a></li>
+                            <li><a href="">PConline</a></li>
+                            <li><a href="">3W咖啡</a></li>
+                            <li><a href="">亿觅emie</a></li>
+                            <li><a href="">易迅易启玩</a></li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>购买攻略</dt>
+                    <dd>美亚海淘教程</dd>
+                    <dd>日亚海淘教程</dd>
+                    <dd>海淘转运攻略</dd>
+                    <dd>kickstarter 众筹购买攻略</dd>
+                    <dd>indiegogo 众筹购买攻略</dd>
+                </dl>
+                <dl>
+                    <dt>厂商合作</dt>
+                    <dd><a href="">关于极果</a></dd>
+                    <dd><a href="">联系我们</a></dd>
+                    <dd><a href="">商务合作：BD@jiguo.com</a></dd>
+                    <dd><a href="">CEO邮箱：CEO@jiguo.com</a></dd>
+                </dl>
+            </div>
+            <p>@copy 2016 极果版权所有</p>
+        </footer>
+
+        <script src="./js/jquery-3.3.1.min.js"></script>
+        <script src="./js/doT.min.js"></script>
+        <script src="./js/index.js"></script>    
+       
+</body>
+
+</html>

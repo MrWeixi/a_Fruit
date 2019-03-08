@@ -1,0 +1,121 @@
+.art {
+    width: 100%;
+    height: 170px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.art>h2 {
+    margin-top: 50px;
+    font-size: 36px;
+}
+
+.art_msg {
+    width: 504px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.art_msg>a {
+    display: inline-block;
+    width: 164px;
+    height: 47px;
+    text-align: center;
+}
+
+a {
+    color: rgb(172, 170, 184);
+}
+
+/* 颜色*/
+.a {
+    border-bottom: 3px solid rgb(246, 84, 64);
+}
+
+.a2 {
+    color: rgb(246, 84, 64);
+}
+
+.third {
+    width: 100%;
+    overflow: hidden;
+    margin-top: -30px;
+    background-color: #f7f7ff;
+}
+
+.third .found {
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 25px;
+    overflow: hidden;
+}
+
+.third .found .found-list {
+    width: 220px;
+    height: 232px;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    margin-top: 20px;
+    float: left;
+    margin-right: 28px;
+}
+
+.third .found .found-list img {
+    width: 220px;
+    height: 130px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.third .found .found-list li:nth-child(2) h3 {
+    margin-left: 8px;
+}
+
+.third .found .found-list li:nth-child(2) p {
+    width: 195px;
+    margin-left: 8px;
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+.third .found .found-list li:nth-child(3) p {
+    margin-top: 20px;
+    margin-left: 8px;
+    font-size: 16px;
+    color: #d86b2d;
+}
+
+.third .found .found-list li:nth-child(3) p span {
+    float: right;
+    padding: 0 15px;
+    color: #9f9e97;
+}
+
+.third .found .found-list li:nth-child(3) p span:nth-child(1) {
+    background: url('./img/reply.png') no-repeat 1px 1px;
+}
+
+.third .found .found-list li:nth-child(3) p span:nth-child(2) {
+    background: url('./img/zan.png') no-repeat 1px 1px;
+}
+
+.third .more {
+    width: 1000px;
+    height: 126px;
+    margin: 0 auto;
+    line-height: 126px;
+}
+
+.third .more p {
+    text-align: center;
+
+}
+
+.third .more a {
+    color: #e65432;
+    font-size: 18px;
+    padding-left: 20px;
+    background: url('./img/more.png') no-repeat 1px center;
+}
